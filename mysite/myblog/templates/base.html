@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Index {% endblock %}</title>
+</head>
+<body>
+{% block content %} Hello from index page! {% endblock %}
+</body>
+</html>

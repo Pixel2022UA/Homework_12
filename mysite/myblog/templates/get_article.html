@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Articles:
+{% endblock %}
+
+{% block content %}
+    <h2>Our article:</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">TITLE</th>
+                <th scope="col">CONTENT</th>
+                <th scope="col">UPDATE TIME</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ article.id }}</td>
+                <td>{{ article.title }}</td>
+                <td style="max-width: 200px;">{{ article.content }}</td>
+                <td>{{ article.updated_at }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
